@@ -45,7 +45,7 @@ jobs:
         SOURCE_DIR: './'
 
     - name: Trigger CodeDeploy
-      uses: webfactory/create-aws-codedeploy-deployment@v1
+      uses: webfactory/create-aws-codedeploy-deployment@v0.6.2
       with:
         application-name: ${{ secrets.CODEDEPLOY_APP_NAME }}
         deployment-group: ${{ secrets.DEPLOYMENT_GROUP_NAME }}
